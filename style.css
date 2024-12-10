@@ -15,7 +15,6 @@ body {
     padding: 0;
 }
 
-/* Sidebar Styling */
 .sidebar {
     background-color: #111;
     color: #fff;
@@ -24,6 +23,18 @@ body {
     position: fixed;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none; /* Hidden on larger screens */
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .content {
@@ -414,4 +425,35 @@ textarea {
 
 .btn-submit:hover {
     background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin-left: 0; /* Remove sidebar offset on small screens */
+        padding: 20px;
+    }
 }
