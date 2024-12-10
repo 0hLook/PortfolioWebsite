@@ -439,6 +439,9 @@ textarea {
 
     .menu-toggle {
         display: block;
+        font-size: 30px;
+        color: #3998e7;     
+        cursor: pointer;
     }
 
     .nav-menu ul {
