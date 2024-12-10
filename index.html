@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jimmy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69f617da3a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("kptRX_mwi5uwl6lCE");
+    })();
+    </script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="panda.png" alt="Jimmy Yang" class="profile-img">
+            <h2>Jimmy Yang</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/0hlook_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/wenhao-jimmy-yang-0691992ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/0hLook" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#ABOUT">About</a></li>
+                <li><a href="#SKILLS">Skills</a></li>
+                <li><a href="#EDUCATION">Education</a></li>
+                <li><a href="#EAP">Experience</a></li>
+                <li><a href="#EAP">Projects</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <section class="about" id="ABOUT">
+            <h1>About</h1>
+            <div class="about-content">
+                <img src="jimmy.jpg" alt="Profile Image" class="about-img">
+                <div class="details">
+                    <h2>Software Engineering Student at Curtin University</h2>
+                    <p class="about-description">
+                        Greetings, my name is Jimmy. Over the past couple years, I have developed strong proficiency in: <br>
+                        Python, Java, C, C#, MySQL, Kotlin, HTML, CSS, JS, Jetpack Compose, .NET Frameworks and ASP.NET MVC. <br> <br>
+                        Outside of my studies, I have volunteered and tutored highschool students relavent computing topics to boost their understandings 
+                        while strengthing my communication, teamwork and management skills.
+                    </p>
+                    <ul class="info-list">
+                        <li><strong>Email:</strong> Jimmy0924TG@gmail.com</li>
+                        <li><strong>Phone:</strong> (Ask via Email)</li>
+                        <li><strong>Based in:</strong> Perth, WA</li>
+                        <li><strong>Age:</strong> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="resume.pdf" download="Jimmy_Resume" class="btn-download">Download Resume</a>
+        </section>
+        <!-- Skills Section -->
+         <br><br><br>
+         <section class="skills" id="SKILLS">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-text">Python</div>
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">Java</div>
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">C</div>
+                    C
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">C#</div>
+                    C#
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">MySQL</div>
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">HTML</div>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">CSS</div>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">Kotlin</div>
+                    K
+                </div>
+                <div class="skill-item">
+                    <div class="skill-text">JavaScript</div>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <section class="education" id="EDUCATION">
+            <h1>Education</h1>
+            <br><br><br>
+            <div class="education-item">
+                <h2>Feb 2023 - Present</h2>
+                <h3>Bachelor of Computing - Software Engineering</h3>
+                <p><strong>Current CWA:</strong> 79.75</p>
+                <p>Curtin University</p>
+            </div>
+        
+            <div class="education-item">
+                <h2>Feb 2023 - Jun 2023</h2>
+                <h3>Cyber Security - Python Application Scripting for Beginners Skill Set</h3>
+                <p>North Metropolitan TAFE</p>
+            </div>
+        
+            <div class="education-item">
+                <h2>Feb 2017 - Dec 2022</h2>
+                <h3>Highschool Diploma</h3>
+                <p>John Forrest Secondary College</p>
+            </div>
+         </section>
+
+         <section class="ExperienceAndProjects" id="EAP">
+            <h1>Experience And Projects</h1>
+            <div id="MoreInfo" class="container2">
+                <div class="sidebar2">
+                    <button class="tab-button active" data-tab="experience">Experience</button>
+                    <button class="tab-button" data-tab="projects">Projects</button>
+                </div>
+                <div class="content2">
+                    <div class="tab-content active" id="experience">
+                        <h2 id="OneH2">My Experience</h2>
+                        <div class="education-box">
+                            <h3 id="OneH3">Nov 2024 - Nov 2024</h3>
+                            <p id="p5"><strong>Private Tutor</strong></p>
+                            <p id="p5">Tutored Year 12 Computer Science ATAR content to help prepare before the final WACE examination.</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Oct 2022 - Mar 2024</h3>
+                            <p id="p5"><strong>Retail Assistant at 7 Seas Seafood</strong></p>
+                            <p id="p5">Handled customer orders, resolved queries and maintaining a clean vibrant store.</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="projects">
+                        <h2 id="OneH2">My Projects</h2>
+                        <div class="education-box">
+                            <h3 id="OneH3">Sudoku Validator</h3>
+                            <p id="p5">An university assignment project implemented in C with multithreading. Validates every row, column and 3x3 subgrid where it will output a summary at the end. 
+                                <br>(This is currently private on my github but will become public once I graduate.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Bike Simulation Shop</h3>
+                            <p id="p5">An university assignment project that utilises design patterns such as factory, observer and state implemented in java where an economy system is maintained. 
+                                <br>(This is currently private on my github but will become public once I graduate.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Chat Lobby System</h3>
+                            <p id="p5">An university assignment project collaborated with another student that utilises .NET remoting and WPF implemented in C#. Allows multiple clients to connect to message in chatrooms or privately message. 
+                                <br>(This is currently private on my github but will become public once I graduate.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Banking System</h3>
+                            <p id="p5">A full stack university assignment project collaborated with another student that utilises REST APIs, ASP.NET MVC and SQLite implemented in C#. Users are able to login to make deposits, withdraws, transactions and view transaction history. Furthermore, everything is maintained with an adminstrative account.
+                                <br>(This is currently private on my github but will become public once I graduate.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Connect 4 Game</h3>
+                            <p id="p5"> An university assignment project collaborated with another student implemented in kotlin. The classic connect 4 game that can be played with an advanced AI or second player.
+                                <br>(This is currently private on my github but may become public based on the other student's decision.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Nutrition Tracking Application</h3>
+                            <p id="p5"> An university assignment project collaborated with another student implemented in kotlin. Uses external APIs and multithreading to retrieve nutrition information where users can log and set long term goals.
+                                <br>(This is currently private on my github but may become public based on the other student's decision.)</p>
+                        </div>
+                        <div class="education-box">
+                            <h3 id="OneH3">Olympic 2024 Data Visualisation</h3>
+                            <p id="p5"> An university assignment project implemented in mySQL and python. Users can use queries, procedures and views to obtain specific complex data.
+                                <br>(This is currently private on my github but will become public once I graduate.)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+         </section>
+
+        <section class="Contact" id="CONTACT">
+            <div>
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out via the form below, and I will get back to you as soon as possible!</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" onclick="SendMail()">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
