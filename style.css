@@ -458,6 +458,11 @@ textarea {
         background-color: #5c1111;
     }
 
+    .menu-toggle i {
+        font-size: 24px; /* Icon size */
+        color: #1d1313; /* White color for contrast */
+    }
+
     .content {
         margin-left: 0;
         padding: 15px;
