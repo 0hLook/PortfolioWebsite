@@ -520,8 +520,11 @@ textarea {
         text-align: center;
     }
 
-    .social-links2 a {
+    .social-links2 {
         flex-direction: row;
+    }
+
+    .social-links2 a {
         display: block;
         color: #000000;
         margin: 0 8px;
