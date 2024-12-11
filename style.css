@@ -521,6 +521,7 @@ textarea {
     }
 
     .social-links2 a {
+        flex-direction: row;
         display: block;
         color: #000000;
         margin: 0 8px;
