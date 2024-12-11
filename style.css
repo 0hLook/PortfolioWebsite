@@ -435,7 +435,6 @@ textarea {
         flex-direction: column;
     }
     .about {
-        display: flex;
         justify-content: center;
         align-items: center;
     }
