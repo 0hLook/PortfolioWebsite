@@ -517,7 +517,11 @@ textarea {
 
     .btn-download {
         margin-left: 0;
-        text-align: center;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        display: inline-block; 
     }
 
     .social-links2 {
