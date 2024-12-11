@@ -516,8 +516,8 @@ textarea {
     }
 
     .btn-download {
-        margin: 0 auto;
         display: block;
+        text-align: center;
     }
 
     .social-links2 {
