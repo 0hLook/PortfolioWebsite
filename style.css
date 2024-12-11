@@ -434,6 +434,11 @@ textarea {
     body {
         flex-direction: column;
     }
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .sidebar {
         transform: translateY(-100%);
@@ -516,7 +521,7 @@ textarea {
     }
 
     .btn-download {
-        display: inline-block;
+        display: block;
         text-align: center;
         justify-content: center; 
         align-items: center; 
