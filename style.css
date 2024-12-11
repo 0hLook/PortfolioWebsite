@@ -518,6 +518,9 @@ textarea {
     .btn-download {
         display: block;
         text-align: center;
+        justify-content: center; 
+        align-items: center; 
+        
     }
 
     .social-links2 {
