@@ -434,10 +434,6 @@ textarea {
     body {
         flex-direction: column;
     }
-    .about {
-        justify-content: center;
-        align-items: center;
-    }
 
     .sidebar {
         transform: translateY(-100%);
@@ -524,6 +520,7 @@ textarea {
         text-align: center;
         justify-content: center; 
         align-items: center; 
+        margin: 0 auto;
         
     }
 
