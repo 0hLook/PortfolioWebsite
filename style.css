@@ -436,6 +436,7 @@ textarea {
     }
     .about {
         justify-content: center;
+        align-items: center;
     }
 
     .sidebar {
