@@ -64,15 +64,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-.social-links3 a {
-    display: none;
-    color: #000000;
-    margin: 0 8px;
-    text-decoration: none;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-}
 
 .nav-menu ul {
     list-style: none;
@@ -525,12 +516,8 @@ textarea {
     }
 
     .btn-download {
-        margin-left: 0;
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center; 
-        align-items: center; 
-        display: inline-block; 
+        margin: 0 auto;
+        display: block;
     }
 
     .social-links2 {
@@ -543,22 +530,6 @@ textarea {
     }
 
     .social-links2 a {
-        display: inline-block; 
-        color: #000000;
-        font-size: 40px;
-        text-decoration: none; 
-    }
-
-    .social-links3 {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: left; 
-        align-items: left; 
-        gap: 10px; 
-        margin-top: 15px; 
-    }
-
-    .social-links3 a {
         display: inline-block; 
         color: #000000;
         font-size: 40px;
