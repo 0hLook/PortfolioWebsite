@@ -28,13 +28,15 @@ body {
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    display: block;
+    position: fixed;
+    top: 10px; /* Position 10px from the top */
+    right: 10px; /* Align to the right */
+    z-index: 9999; /* Ensure it's above all elements */
+    background-color: #dd1010; /* Optional: Button background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .content {
@@ -432,13 +434,9 @@ textarea {
         flex-direction: column;
     }
 
-    /* Sidebar Behavior */
     .sidebar {
-        width: 100%; /* Full width for smaller screens */
-        height: auto;
-        position: fixed;
         transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
+        width: 100%; /* Full width for mobile */
     }
 
     .sidebar.show {
@@ -451,7 +449,7 @@ textarea {
         top: 10px;
         right: 10px;
         z-index: 9999;
-        background-color: #000;
+        background-color: #5c1111;
     }
 
     .content {
