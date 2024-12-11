@@ -39,6 +39,11 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
+.menu-toggle i {
+    font-size: 24px; /* Adjust icon size */
+    color: #000; /* Black color for the bars icon */
+}
+
 .content {
     flex: 1; /* Take the remaining space */
     overflow: hidden;
@@ -437,6 +442,7 @@ textarea {
     .sidebar {
         transform: translateY(-100%);
         width: 100%; /* Full width for mobile */
+        transition: transform 0.3s ease-in-out;
     }
 
     .sidebar.show {
