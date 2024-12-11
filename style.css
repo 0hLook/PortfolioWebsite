@@ -434,9 +434,6 @@ textarea {
     body {
         flex-direction: column;
     }
-    .about {
-        justify-content: center;
-    }
 
     .sidebar {
         transform: translateY(-100%);
