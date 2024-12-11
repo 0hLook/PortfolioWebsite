@@ -521,16 +521,16 @@ textarea {
     }
 
     .social-links2 {
-        flex-direction: row;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center; 
+        gap: 10px; 
     }
 
     .social-links2 a {
-        display: block;
         color: #000000;
-        margin: 0 8px;
         text-decoration: none;
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
+        font-size: 40px; 
     }
 }
