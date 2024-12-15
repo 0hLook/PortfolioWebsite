@@ -576,6 +576,10 @@ textarea {
         
     }
 
+    .tab-button:hover {
+        background-color: #3998e7;
+      }
+
     .social-links2 {
         display: flex; 
         flex-direction: row; 
