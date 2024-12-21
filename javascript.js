@@ -1,12 +1,12 @@
 // Project buttons menu
-document.querySelectorAll('.tab-button').forEach(button => {
+document.querySelectorAll('.tabButton').forEach(button => {
   button.addEventListener('click', () => {
 
-    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tabButton').forEach(btn => btn.classList.remove('active'));
 
     button.classList.add('active');
 
-    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+    document.querySelectorAll('.tabContent').forEach(content => content.classList.remove('active'));
 
     const tabId = button.getAttribute('data-tab');
     document.getElementById(tabId).classList.add('active');
@@ -15,8 +15,8 @@ document.querySelectorAll('.tab-button').forEach(button => {
 
 // Animation for projects and experience
 document.addEventListener("DOMContentLoaded", () => {
-  const tabButtons = document.querySelectorAll(".tab-button");
-  const tabContents = document.querySelectorAll(".tab-content");
+  const tabButtons = document.querySelectorAll(".tabButton");
+  const tabContents = document.querySelectorAll(".tabContent");
 
   tabButtons.forEach(button => {
       button.addEventListener("click", () => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Reset animations
           tabContents.forEach(content => {
               content.classList.remove("active");
-              const items = content.querySelectorAll(".education-box");
+              const items = content.querySelectorAll(".educationBox");
               items.forEach(item => item.style.opacity = "0"); // Reset opacity
           });
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           activeContent.classList.add("active");
 
           // Trigger the animation for each item in the active tab
-          const items = activeContent.querySelectorAll(".education-box");
+          const items = activeContent.querySelectorAll(".educationBox");
           items.forEach((item, index) => {
               setTimeout(() => {
                   item.style.opacity = "1"; // Gradually make items visible

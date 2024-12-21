@@ -49,13 +49,13 @@ body {
     font-size: 24px;
 }
 
-.social-links a {
+.socialLinks a {
     color: #fff;
     margin: 0 8px;
     text-decoration: none;
     font-size: 20px;
 }
-.social-links2 a {
+.socialLinks2 a {
     display: none;
     color: #000000;
     margin: 0 8px;
@@ -65,23 +65,23 @@ body {
     justify-content: center;
 }
 
-.nav-menu ul {
+.navMenu ul {
     list-style: none;
     margin-top: 20px;
 }
 
-.nav-menu ul li {
+.navMenu ul li {
     margin: 15px 0;
 }
 
-.nav-menu ul li a {
+.navMenu ul li a {
     color: #ccc;
     text-decoration: none;
     font-size: 16px;
 }
 
-.nav-menu ul li.active a,
-.nav-menu ul li a:hover {
+.navMenu ul li.active a,
+.navMenu ul li a:hover {
     color: #00aaff;
 }
 
@@ -111,7 +111,7 @@ body {
     color: #555;
 }
 
-.about-content {
+.aboutContent {
     display: flex;
     align-items: flex-start;
     margin: 20px 0;
@@ -128,22 +128,22 @@ body {
     margin-bottom: 10px;
 }
 
-.about-description {
+.aboutDescription {
     font-style: italic;
     color: #777;
     margin-bottom: 20px;
 }
 
-.info-list {
+.infoList {
     list-style: none;
 }
 
-.info-list li {
+.infoList li {
     margin: 10px 0;
     font-size: 16px;
 }
 
-.info-list strong {
+.infoList strong {
     color: #00aaff;
 }
 
@@ -182,7 +182,7 @@ body {
     margin-left: 25px;
 }
 
-.skills-container {
+.skillsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -245,7 +245,7 @@ body {
     padding-bottom: 50px;
 }
 
-.education-item {
+.educationItem {
     background-color: #2c2c2c;
     color: #fff;
     padding: 20px;
@@ -255,24 +255,24 @@ body {
     margin-left: 150px;
 }
 
-.education-item h2 {
+.educationItem h2 {
     font-size: 1.2rem;
     margin: 0;
     font-weight: bold;
 }
 
-.education-item h3 {
+.educationItem h3 {
     font-size: 1rem;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.education-item p {
+.educationItem p {
     font-size: 0.9rem;
     margin: 5px 0;
 }
 
-.education-item-content {
+.educationItem-content {
     display: flex;
     align-items: center;
     gap: 20px; /* Space between text and image */
@@ -310,7 +310,7 @@ body {
     flex-direction: column;
   }
   
-.tab-button {
+.tabButton {
     background-color: #333;
     color: #f5f5f5;
     border: none;
@@ -320,12 +320,12 @@ body {
     text-align: left;
   }
   
-.tab-button.active {
+.tabButton.active {
     background-color: #3998e7;
     color: #000;
   }
   
-.tab-button:hover {
+.tabButton:hover {
     background-color: #444;
   }
   
@@ -336,15 +336,15 @@ body {
     border-left: 2px solid #333;
   }
   
-.tab-content {
+.tabContent {
     display: none;
   }
   
-.tab-content.active {
+.tabContent.active {
     display: block;
   }
 
-  .education-box {
+  .educationBox {
     background-color: #333;
     padding: 15px;
     margin-top: 10px;
@@ -364,31 +364,31 @@ body {
     }
 }
 
-.education-box:nth-child(1) {
+.educationBox:nth-child(1) {
     animation-delay: 0.1s;
 }
 
-.education-box:nth-child(2) {
+.educationBox:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.education-box:nth-child(3) {
+.educationBox:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.education-box:nth-child(4) {
+.educationBox:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-.education-box:nth-child(5) {
+.educationBox:nth-child(5) {
     animation-delay: 0.5s;
 }
 
-.education-box:nth-child(6) {
+.educationBox:nth-child(6) {
     animation-delay: 0.6s;
 }
 
-.education-box:nth-child(7) {
+.educationBox:nth-child(7) {
     animation-delay: 0.7s;
 }
 
@@ -511,7 +511,7 @@ textarea {
         padding: 10px;
     }
 
-    .skills-container {
+    .skillsContainer {
         grid-template-columns: repeat(2, 1fr); /* Adjusted grid for small screens */
         gap: 15px;
     }
@@ -522,7 +522,7 @@ textarea {
         padding: 20px;
     }
 
-    .education-item {
+    .educationItem {
         margin-left: 0;
     }
 
@@ -550,7 +550,7 @@ textarea {
     }
 
     /* About Section */
-    .about-content {
+    .aboutContent {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -576,11 +576,11 @@ textarea {
         
     }
 
-    .tab-button:hover {
+    .tabButton:hover {
         background-color: #3998e7;
       }
 
-    .social-links2 {
+    .socialLinks2 {
         display: flex; 
         flex-direction: row; 
         justify-content: center; 
@@ -589,7 +589,7 @@ textarea {
         margin-top: 15px; 
     }
 
-    .social-links2 a {
+    .socialLinks2 a {
         display: inline-block; 
         color: #000000;
         font-size: 40px;
