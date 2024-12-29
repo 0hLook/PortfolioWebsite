@@ -123,6 +123,10 @@ body {
     margin-right: 30px;
 }
 
+.skill-img {
+    width: 30px;
+}
+
 .details h2 {
     font-size: 24px;
     margin-bottom: 10px;
