@@ -1,19 +1,71 @@
-document.querySelectorAll('.tab-button').forEach(button => {
+// Project buttons menu
+document.querySelectorAll('.tabButton').forEach(button => {
   button.addEventListener('click', () => {
-    // Remove active class from all buttons
-    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
 
-    // Add active class to the clicked button
+    document.querySelectorAll('.tabButton').forEach(btn => btn.classList.remove('active'));
+
     button.classList.add('active');
 
-    // Hide all content sections
-    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+    document.querySelectorAll('.tabContent').forEach(content => content.classList.remove('active'));
 
-    // Show the corresponding content
     const tabId = button.getAttribute('data-tab');
     document.getElementById(tabId).classList.add('active');
   });
 })
+
+// Animation for projects and experience
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tabButton");
+  const tabContents = document.querySelectorAll(".tabContent");
+
+  tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+          const targetTab = button.getAttribute("data-tab");
+
+          // Remove active class from buttons and add it to the clicked button
+          tabButtons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // Reset animations
+          tabContents.forEach(content => {
+              content.classList.remove("active");
+              const items = content.querySelectorAll(".educationBox");
+              items.forEach(item => item.style.opacity = "0"); // Reset opacity
+          });
+
+          // Shows the target tab content and triggers the fade-in
+          const activeContent = document.getElementById(targetTab);
+          activeContent.classList.add("active");
+
+          // Trigger the animation for each item in the active tab
+          const items = activeContent.querySelectorAll(".educationBox");
+          items.forEach((item, index) => {
+              setTimeout(() => {
+                  item.style.opacity = "1"; // Gradually make items visible
+              }, index * 20); // Staggered delay for each item
+          });
+      });
+  });
+});
+
+
+// Fade in effect
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeInElements = document.querySelectorAll(".fade-in");
+
+  function checkVisibility() {
+      fadeInElements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.85 && rect.bottom >= 0) {
+              element.classList.add("visible");
+          }
+      });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); 
+});
+
 
 function SendMail() {
   const contactForm = document.querySelector("#contactForm");
@@ -51,6 +103,11 @@ function SendMail() {
       });
   });
 
+}
+
+function toggleMenu() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('show');
 }
 
 
