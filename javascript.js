@@ -99,7 +99,7 @@ function SendMail() {
         emailInput.value = "";
         msgInput.value = "";
       }, (error) => {
-          submitButton.innerText = "Something Went Wrong";
+          submitButton.innerText = "API key disabled due to prolonged inactivity";
       });
   });
 
